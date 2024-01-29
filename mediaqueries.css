@@ -16,21 +16,23 @@ body
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 250px;
 }
 
 .choice-box{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
-    gap: 100px;
+    margin-top: auto;
+    gap: 30px;
 }
 .choice
 {
-    height: 150px;
-    width: 150px;
-    gap: 150px;
+    height: 50px;
+    width: 50px;
+    gap: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -46,8 +48,8 @@ body
     left:-5px;
   }
 .choice img {
-    height: 120px;
-    width: 300px;
+    height: 50px;
+    width: 50px;
     object-fit: fill;
     padding: 10px;
     border-radius: 50%;
@@ -57,33 +59,49 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    margin-top:4rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
-    gap: 14rem;
+    font-size: 1rem;
+    margin-top:6rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    gap: 3rem;
     border: 5px solid #000; 
   }
-  
   #user-score,
   #computer-score ,#draw-score{
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .msg-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
-    
   }
-  
   #msg {
+    margin-top: 3rem;
     background-color: #0eee2c;
     color: #000000;
-    font-size: 2rem;
+    font-size: 1rem;
     display: inline;
     padding: 10px;
     border-radius: 1rem;
   }
-
+  #resetButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    margin-top: 4rem;
 }
+.reset img{
+  width: 50px;
+}
+#resetButton:hover {
+    background-color: #00ff73; 
+    box-shadow: 0 0 5px #00eeff,0 0 25px #00eeff,0 0 50px #00eeff, 0 0 200px #00eeff;
+}
+} 

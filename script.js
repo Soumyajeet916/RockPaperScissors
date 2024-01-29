@@ -8,16 +8,6 @@ const computerScorePara = document.querySelector("#computer-score");
 const drawScorePara=document.querySelector("#draw-score")
 const reset=document.querySelector("#resetButton")
 
-const resetGame =() =>{
-  userScore=0;
-  computerScore=0;
-  drawScore=0;
-  userScorePara.innerText = userScore;
-  computerScorePara.innerText = computerScore;
-  drawScorePara.innerText=drawScore;
-  msg.innerText = "Play your move"; 
-  msg.style.backgroundColor = "limegreen";
-} 
 
 const generateComputerChoice = () => {
   const options = ["Rock", "Paper", "Scissors"];
@@ -63,6 +53,16 @@ const showWinner = (userWin, userChoice, computerChoice) => {
     msg.style.backgroundColor = "red";
   }
 };
+const resetGame =() =>{
+  userScore=0;
+  computerScore=0;
+  drawScore=0;
+  userScorePara.innerText = userScore;
+  computerScorePara.innerText = computerScore;
+  drawScorePara.innerText=drawScore;
+  msg.innerText = "Play your move"; 
+  msg.style.backgroundColor = "#0eee2c";
+} 
 choices.forEach((choice) => {
   choice.addEventListener("click", () => {
     const userChoice = choice.getAttribute("id");
