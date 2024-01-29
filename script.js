@@ -6,6 +6,18 @@ const msg = document.querySelector("#msg");
 const userScorePara = document.querySelector("#user-score");
 const computerScorePara = document.querySelector("#computer-score");
 const drawScorePara=document.querySelector("#draw-score")
+const reset=document.querySelector("#resetButton")
+
+const resetGame =() =>{
+  userScore=0;
+  computerScore=0;
+  drawScore=0;
+  userScorePara.innerText = userScore;
+  computerScorePara.innerText = computerScore;
+  drawScorePara.innerText=drawScore;
+  msg.innerText = "Play your move"; 
+  msg.style.backgroundColor = "limegreen";
+} 
 
 const generateComputerChoice = () => {
   const options = ["Rock", "Paper", "Scissors"];
@@ -56,4 +68,7 @@ choices.forEach((choice) => {
     const userChoice = choice.getAttribute("id");
     playGame(userChoice);
   });
+});
+reset.addEventListener("click",() => {
+  resetGame()
 });

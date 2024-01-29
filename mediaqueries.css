@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@media screen and (max-width: 1000px)
+{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -71,7 +73,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
     
   }
   
@@ -83,20 +85,5 @@ body
     padding: 10px;
     border-radius: 1rem;
   }
-  #resetButton {
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 100px;
-}
 
-#resetButton:hover {
-    background-color: #00ff73; 
-    box-shadow: 0 0 5px #00eeff,0 0 25px #00eeff,0 0 50px #00eeff, 0 0 200px #00eeff;
 }
-
