@@ -60,7 +60,7 @@ body
     margin-left: 30rem;
     margin-right: 30rem;
     gap: 14rem;
-    border: 5px solid #000; 
+    border: none; 
   }
   
   #user-score,

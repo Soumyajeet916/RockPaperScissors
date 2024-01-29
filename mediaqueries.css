@@ -64,7 +64,7 @@ body
     margin-left: 12rem;
     margin-right: 12rem;
     gap: 3rem;
-    border: 5px solid #000; 
+    border: none;
   }
   #user-score,
   #computer-score ,#draw-score{
